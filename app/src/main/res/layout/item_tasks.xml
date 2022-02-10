@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:focusable="true"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_item"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/click_effect_items"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/description_item_task_deleted"
+            style="@style/TextStyleDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:text=""
+            android:textColor="@color/gray_900"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/data_item_task_deleted"
+            />
+
+        <TextView
+            android:id="@+id/data_item_task_deleted"
+            style="@style/TextStyleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/orange_600"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/description_item_task_deleted"
+            app:layout_constraintLeft_toRightOf="@id/description_item_task_deleted"
+            app:layout_constraintTop_toTopOf="@id/description_item_task_deleted" />
+
+        <ImageView
+            android:id="@+id/delete_item_task_deleted"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/click_effect_icons"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintLeft_toRightOf="@id/data_item_task_deleted"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

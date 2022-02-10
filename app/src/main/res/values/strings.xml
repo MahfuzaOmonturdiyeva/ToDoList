@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ToDos</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="no_task">You don\'t have tasks.\n Create a new task</string>
+    <string name="no_checklist">You don\'t have checklist.\n Create a new checklist</string>
+    <string name="no_tasks">No Task</string>
+    <string name="no_checklists">No Checklist</string>
+    <string name="title_activity_example">example</string>
+    <string name="delete_all_notes">Delete all notes?</string>
+    <string name="delete">Delete?</string>
+    <string name="cancel">cancel</string>
+    <string name="task">task</string>
+    <string name="add">add</string>
+    <string name="todos">TODOS</string>
+    <string name="tasks">Tasks</string>
+    <string name="checklist">Checklist</string>
+    <string name="deckription">Description</string>
+    <string name="deleted">Deleted</string>
+    <string name="title_activity_remove">RemoveActivity</string>
+    <string name="delete_">delete</string>
+</resources>
